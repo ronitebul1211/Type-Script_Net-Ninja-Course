@@ -88,3 +88,10 @@ type aliasName = typeDefinition
 
 function signature use to define the function type that a variable will hold  
 let functionVar : (parameterTypeDefinition) => returnType
+
+## The DOM & Type Casting
+
+when variable assigned to DOM element with query selector + element type ("a")  
+the variable type will be HTMLAnchorElement by default thanks to TS compiler.  
+when a class name or id used to query element, his type will be Element,  
+to cast it specific type use as operator with element type -> as HTMLAnchorElement.
