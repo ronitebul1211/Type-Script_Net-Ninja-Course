@@ -95,3 +95,8 @@ when variable assigned to DOM element with query selector + element type ("a")
 the variable type will be HTMLAnchorElement by default thanks to TS compiler.  
 when a class name or id used to query element, his type will be Element,  
 to cast it specific type use as operator with element type -> as HTMLAnchorElement.
+
+## Classes
+
+use typescript to define a class variable type in the declaration and when passed into the constructor,  
+ the class can be used as a type of variable as object/array definition type.

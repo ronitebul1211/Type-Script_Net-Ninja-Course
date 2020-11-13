@@ -14,3 +14,27 @@ form.addEventListener("submit", (event: Event) => {
    event.preventDefault();
    console.log(typeInput.value, toFromInput.value, detailsInput.value, amountInput.valueAsNumber);
 });
+
+/** Class */
+class Invoice {
+   client: string;
+   details: string;
+   amount: number;
+
+   constructor(client: string, details: string, amount: number) {
+      this.client = client;
+      this.details = details;
+      this.amount = amount;
+   }
+
+   format() {
+      return `${this.client} owes ${this.amount} for ${this.details}`;
+   }
+}
+
+const invoiceOne = new Invoice("Roni", "Empanada", 90);
+const invoiceTwo = new Invoice("Gal", "Empanada", 150);
+
+let invoices: Invoice[] = [];
+invoices.push(invoiceOne);
+invoices.push(invoiceTwo);

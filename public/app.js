@@ -13,3 +13,20 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log(typeInput.value, toFromInput.value, detailsInput.value, amountInput.valueAsNumber);
 });
+/** Class */
+var Invoice = /** @class */ (function () {
+    function Invoice(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
+    }
+    Invoice.prototype.format = function () {
+        return this.client + " owes " + this.amount + " for " + this.details;
+    };
+    return Invoice;
+}());
+var invoiceOne = new Invoice("Roni", "Empanada", 90);
+var invoiceTwo = new Invoice("Gal", "Empanada", 150);
+var invoices = [];
+invoices.push(invoiceOne);
+invoices.push(invoiceTwo);
