@@ -13,3 +13,10 @@
    -  tsc \<input-file.ts> \<output-file.js> \<flag>
    -  when it has same name use input-file only
 -  files changes re-compile or use watch flag -w
+
+## Types Basics
+
+-  strict types mean value types can't change during runtime.
+-  type determined by value assignment (inference)
+-  arg type definition -> function (arg: type) {...}  
+   type check happen before the compilation to JS, file won't compile with errors
