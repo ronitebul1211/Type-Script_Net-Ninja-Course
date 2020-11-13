@@ -56,3 +56,7 @@
    mean -> can assign any object type includes array
 -  objectVar : { name : string, age : number }  
    determine explicitly object structure and properties types
+
+## Dynamic Type
+
+revert to JS, think twice before using it -> **any**

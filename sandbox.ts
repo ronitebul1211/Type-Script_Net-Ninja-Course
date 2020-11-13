@@ -47,38 +47,53 @@
 // // emptyObject.name = "roni";
 
 /** Explicit Type */
-let characters: string;
-let age: number;
-let isLoggedIn: boolean;
-// union type
-let numOrStr: number | string;
-numOrStr = 1;
-numOrStr = "1";
-//-------------------------------
+// let characters: string;
+// let age: number;
+// let isLoggedIn: boolean;
+// // union type
+// let numOrStr: number | string;
+// numOrStr = 1;
+// numOrStr = "1";
+// //-------------------------------
 
-let unInitArray: string[];
-unInitArray = [];
-unInitArray.push("unInitArray");
+// let unInitArray: string[];
+// unInitArray = [];
+// unInitArray.push("unInitArray");
 
-let initArray: string[] = [];
-initArray.push("initArray");
+// let initArray: string[] = [];
+// initArray.push("initArray");
 
-//union type
-let mixed: (string | number)[] = [];
-mixed.push("mixed");
-mixed.push(12);
-// mixed.push(true)
-//-------------------------------
+// //union type
+// let mixed: (string | number)[] = [];
+// mixed.push("mixed");
+// mixed.push(12);
+// // mixed.push(true)
+// //-------------------------------
 
-let object: object;
-object = {};
-object = [];
+// let object: object;
+// object = {};
+// object = [];
 
-let objectOfTypePerson: {
-   name: string;
-   age: number;
-};
-// objectOfTypePerson = {};
-// objectOfTypePerson.name = "roni";
-// objectOfTypePerson = { name: "roni" };
-objectOfTypePerson = { name: "roni", age: 27 };
+// let objectOfTypePerson: {
+//    name: string;
+//    age: number;
+// };
+// // objectOfTypePerson = {};
+// // objectOfTypePerson.name = "roni";
+// // objectOfTypePerson = { name: "roni" };
+// objectOfTypePerson = { name: "roni", age: 27 };
+
+/** Dynamic Type */
+let age: any = 25;
+age = "25";
+age = true;
+
+let mixed: any[];
+mixed.push(false);
+mixed.push("true");
+mixed.push(1);
+
+let person: { name: any; age: any };
+person.name = "roni";
+person.name = true;
+// person.skills = ["skill 1"]
