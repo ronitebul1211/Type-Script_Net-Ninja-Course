@@ -33,4 +33,26 @@
 
 -  variable hold object can be assigned to another object with the same types, properties
 -  properties can re-assign with a value from the same type
--  propertied can't be added to an object after assignment
+-  properties can't be added to an object after assignment
+
+## Explicit Type
+
+-  The opposite from inference value type (value type determined explicitly and not by literal value)
+
+### Primitive
+
+-  primitiveVar: type
+-  **union type** -> primitiveVar : type1 | type2
+
+### Arrays
+
+-  arrayVar: type [ ]
+-  **union type** -> arrayVar : (type1|type2) [ ]
+-  **explicit + init** -> arrayVar : type[] = [ ]
+
+### Objects
+
+-  objectVar : object  
+   mean -> can assign any object type includes array
+-  objectVar : { name : string, age : number }  
+   determine explicitly object structure and properties types
