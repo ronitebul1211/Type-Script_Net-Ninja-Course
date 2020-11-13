@@ -78,3 +78,8 @@ include property should be added to config file with array of string contain dir
 -  return value:
    -  const functionRef = () : returnValueType => { }
    -  in TS function without returned value return **void**, compile later to undefined
+
+## Type Aliases
+
+when complicated types created instead of repeat it, type aliases should be created  
+type aliasName = typeDefinition
