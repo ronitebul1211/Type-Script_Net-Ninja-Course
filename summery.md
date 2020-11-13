@@ -83,3 +83,8 @@ include property should be added to config file with array of string contain dir
 
 when complicated types created instead of repeat it, type aliases should be created  
 type aliasName = typeDefinition
+
+## Function Signature
+
+function signature use to define the function type that a variable will hold  
+let functionVar : (parameterTypeDefinition) => returnType

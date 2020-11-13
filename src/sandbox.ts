@@ -107,9 +107,30 @@
 // const addDefaultArg = (num1: number, num2: number, num3: number = 10): number => num1 + num2 + num3;
 
 /** Type Aliases */
-type stringOrNum = string | number;
-type userObject = { name: string; uid: stringOrNum };
+// type stringOrNum = string | number;
+// type userObject = { name: string; uid: stringOrNum };
 
-const greetUser = (user: userObject): void => {
-   console.log(user.name);
+// const greetUser = (user: userObject): void => {
+//    console.log(user.name);
+// };
+
+/** Function Signature */
+let greet: (a: string) => void;
+greet = (name: string) => {
+   console.log(`hello ${name}`);
+};
+
+let calc: (a: number, b: number, c: string) => number;
+calc = (firstNum: number, secondNum: number, action: string) => {
+   if (action === "add") {
+      return firstNum + secondNum;
+   } else {
+      throw new Error("Invalid action");
+   }
+};
+
+let logDetails: (obj: { name: string; age: number }) => void;
+type person = { name: string; age: number };
+logDetails = (person: person) => {
+   console.log(`person ${person.name} is ${person.age} years old`);
 };
