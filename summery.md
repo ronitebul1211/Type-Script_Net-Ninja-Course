@@ -68,3 +68,13 @@ in the configuration file -> created by -> **tsc --init**
 root directory and out directory can be configured, then use **tsc -w** to compile any ts file into js file.
 To prevent compilation of all ts files (even out od root directory),  
 include property should be added to config file with array of string contain dirs to compile from.
+
+## Function Basics
+
+-  to declare variable of type function use **Function** type
+-  parameter type -> param : type
+-  optional parameter -> param ? : type
+-  default value -> param : type = value
+-  return value:
+   -  const functionRef = () : returnValueType => { }
+   -  in TS function without returned value return **void**, compile later to undefined

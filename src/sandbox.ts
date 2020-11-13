@@ -97,3 +97,11 @@
 // person.name = "roni";
 // person.name = true;
 // // person.skills = ["skill 1"]
+
+/** Function Basics */
+let greet: Function;
+// greet = 1;
+greet = (): void => console.log("hello");
+
+const addOptionalParam = (num1: number, num2: number, num3?: number) => {};
+const addDefaultArg = (num1: number, num2: number, num3: number = 10): number => num1 + num2 + num3;
