@@ -100,3 +100,13 @@ to cast it specific type use as operator with element type -> as HTMLAnchorEleme
 
 use typescript to define a class variable type in the declaration and when passed into the constructor,  
  the class can be used as a type of variable as object/array definition type.
+
+## Access Modifiers
+
+access modifies define the restrictions for changing values of class variable from outside the class, all class fields public by default.
+
+-  public -> read & set new value
+-  readonly -> read
+-  private -> no access
+
+when you use an access modifiers there is no need to declare class fields after class definition, shortcut can be used.
