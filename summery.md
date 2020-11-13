@@ -60,3 +60,11 @@
 ## Dynamic Type
 
 revert to JS, think twice before using it -> **any**
+
+## Better Workflow - tsconfig
+
+in our project structure the types script files locate in src directory and js files in public directory.  
+in the configuration file -> created by -> **tsc --init**  
+root directory and out directory can be configured, then use **tsc -w** to compile any ts file into js file.
+To prevent compilation of all ts files (even out od root directory),  
+include property should be added to config file with array of string contain dirs to compile from.

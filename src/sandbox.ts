@@ -84,16 +84,16 @@
 // objectOfTypePerson = { name: "roni", age: 27 };
 
 /** Dynamic Type */
-let age: any = 25;
-age = "25";
-age = true;
+// let age: any = 25;
+// age = "25";
+// age = true;
 
-let mixed: any[];
-mixed.push(false);
-mixed.push("true");
-mixed.push(1);
+// let mixed: any[];
+// mixed.push(false);
+// mixed.push("true");
+// mixed.push(1);
 
-let person: { name: any; age: any };
-person.name = "roni";
-person.name = true;
-// person.skills = ["skill 1"]
+// let person: { name: any; age: any };
+// person.name = "roni";
+// person.name = true;
+// // person.skills = ["skill 1"]
